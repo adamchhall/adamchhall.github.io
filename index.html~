@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Adam Hall's Homepage</title>
+  <link rel="stylesheet" type="text/css" href="iknowthatyoulikemystyle.css" />
+</head>
+
+<body>
+  <div id="header">
+    <h1>Adam Hall</h1>
+  </div>
+  
+  <div id="formatbox">
+    <div id="navbox">
+      <ul>
+	<li><a href="index.html" class="selectedpagenavbox">Home</a></li> 
+	<li><a href="research.html" class="navbox">Research</a></li> 
+	<li><a href="teaching.html" class="navbox">Teaching</a></li>
+	<li><a href="links.html" class="navbox">Links</a></li>
+	<li><a href="contact.html" class="navbox">Contact Me</a></li>
+      </ul> 
+    </div>
+    
+    <div id="contentbox">
+      <img class="imgbox" src="Suitable.jpg" width="300px">
+      <h2>About Me</h2>
+      <p>Hello! My name is Adam, and I am currently a PhD student studying in the Department of Statistics at the University of Michigan, Ann Arbor.</p> 
+      <p>I recieved my B.A. in Quantitative Economics and Sociology from the University of California, Irvine in 2011. I am a member of Golden Key and Phi Beta Kappa, and a recipient of the Rackham Merit Fellowship.</p>
+      
+      <div id="footer">
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+</html>
