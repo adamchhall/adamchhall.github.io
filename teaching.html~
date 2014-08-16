@@ -14,26 +14,30 @@
   <div id="formatbox">
     <div id="navbox">
       <ul>
-	<li><a href="index.html" class="navbox">Home</a></li> 
+	<li><a href="index.html" class="navbox">About Me</a></li> 
 	<li><a href="research.html" class="navbox">Research</a></li> 
 	<li><a href="teaching.html" class="selectedpagenavbox">Teaching</a></li>
 	<li><a href="links.html" class="navbox">Links</a></li>
 	<li><a href="contact.html" class="navbox">Contact Me</a></li>
       </ul> 
     </div>
-    
+   
     <div id="contentbox">
       <h2>Teaching</h2>
-      <h3>Courses I have taught:</h3>
-      <p><ul>
-	<li>Stats 250 Introduction to Statistics and Data Analysis (Summer 2014)</li>
-	<li>Stats 403 Intro to Quantitative Research Methods (Winter 2014)</li>
-	<li>Stats 250 Introduction to Statistics and Data Analysis (Fall 2013)</li>
-      </ul></p>
-      
-      <div id="footer">
-      </div>
-      
+      <div align="center"><img src="certainty.png" width="555" height="234"></div>
+      <h3>Courses I have taught labs for:</h3>
+	<table width="600">
+	  <tr>
+	    <td><b>Stats 250: Introduction to Statistics and Data Analysis</b></td>
+	    <td><p> A one term course in applied statistical methodology from an analysis-of-data viewpoint: Frequency distributions; measures of location; mean, median, mode; measures of dispersion; variance; graphic presentation; elementary probability; populations and samples; sampling distributions; one sample univariate inference problems, and two sample problems; categorical data; regression and correlation; and analysis of variance. Use of computers in data analysis.</p></td>
+	    <td><p><b>Taught:</b><li>Fall 2013</li><li>Summer 2014</li></p></td>
+	  </tr>
+	  <tr>
+	    <td><b>Stats 403: Intro to Quantitative Research Methods</b></td>
+	    <td><p>This course introduces methods for planning, executing, and evaluating research studies based on experiments, surveys, and observational datasets. In addition to learning a toolset of methods, students will read and report on recent research papers to learn how study design and data analysis are handled in different fields.</p></td>
+	    <td><p><b>Taught:</b><li>Winter 2014</li><li>Fall 2014</li></td>
+	  </tr>
+  
     </div>
   </div>
 </body>

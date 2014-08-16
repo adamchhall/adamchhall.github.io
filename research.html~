@@ -14,14 +14,14 @@
   <div id="formatbox">
     <div id="navbox">
       <ul>
-	<li><a href="index.html" class="navbox">Home</a></li> 
+	<li><a href="index.html" class="navbox">About Me</a></li> 
 	<li><a href="research.html" class="selectedpagenavbox">Research</a></li> 
 	<li><a href="teaching.html" class="navbox">Teaching</a></li>
 	<li><a href="links.html" class="navbox">Links</a></li>
 	<li><a href="contact.html" class="navbox">Contact Me</a></li>
       </ul> 
     </div>
-    
+
     <div id="contentbox">
       <h2>Research Interests</h2>
 	<p>These are some of the topics that interest me:</p>
@@ -30,15 +30,9 @@
 	  <li>Networks and Graphical Models</li>
 	  <li>Causal Inference</li>
 	  <li>Statistical Visualization</li>
+	  <li>Missing Data</li>
 	</ul>
-      <h2>Research Projects</h2>
-        <p>I have not yet begun work on any research projects.</p>
-      <h2>Publications</h2>
-	<p>I have not yet completed any publications.</p>
-      
-      <div id="footer">
-      </div>
-      
+            <div align="center"><img src="phdgraph.png"></div>
     </div>
   </div>
 </body>
