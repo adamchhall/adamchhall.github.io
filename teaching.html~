@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Adam Hall's Homepage</title>
+  <title>Adam Hall!</title>
   <link rel="stylesheet" type="text/css" href="iknowthatyoulikemystyle.css" />
 </head>
 
@@ -33,14 +33,13 @@
 	    <td><b><div align="center">Taught:</div></b><ul><li>Fall 2013</li><li>Summer 2014</li></ul></td>
 	  </tr>
 	  <tr>
-	    <td><b>Stats 403:<br> Intro to Quantitative Research Methods</b></td>
-	    <td><p>This course introduces methods for planning, executing, and evaluating research studies based on experiments, surveys, and observational datasets. In addition to learning a toolset of methods, students will read and report on recent research papers to learn how study design and data analysis are handled in different fields.</p></td>
-	    <td><b><div align="center">Taught:</div></b><ul><li>Winter 2014</li></ul></td>
-	  </tr>
-  	  <tr>
 	    <td><b>Stats 401:<br> Applied Statistical Methods II</b></td>
 	    <td><p>An intermediate course in applied statistics, covering a range of topics in modeling and analysis of data including: review of simple linear regression, two-sample problems, one-way analysis of variance; multiple linear regression, diagnostics and model selection; two-way analysis of variance, multiple comparisons, and other selected topics.</p></td>
 	    <td><b><div align="center">Taught:</div></b><ul><li>Fall 2014</li></ul></td>
+	  <tr>
+	    <td><b>Stats 403:<br> Intro to Quantitative Research Methods</b></td>
+	    <td><p>This course introduces methods for planning, executing, and evaluating research studies based on experiments, surveys, and observational datasets. In addition to learning a toolset of methods, students will read and report on recent research papers to learn how study design and data analysis are handled in different fields.</p></td>
+	    <td><b><div align="center">Taught:</div></b><ul><li>Winter 2014</li></ul></td>
 	  </tr>
 	</table>
     </div>

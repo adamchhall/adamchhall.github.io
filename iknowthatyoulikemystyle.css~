@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: 17px;
+  font-size: 20px;
   font-family: courier, "Courier New", "Andele Mono", monospace;
   color: black;
   text-align: left;
@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 17px;
   font-family: courier, "Courier New", "Andele Mono", monospace;
   color: black;
   text-align: left;
@@ -47,7 +47,7 @@ h3 {
   background-image: url("tilebg.png");
   margin-left: auto;
   margin-right: auto;
-  width: 750px;
+  width: 75%;
 }
 
 #formatbox {
@@ -56,7 +56,7 @@ h3 {
   border-color: black;
   border-style: solid;
   padding: 0px 0px 0px 0px;
-  width: 750px;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -125,11 +125,11 @@ a.selectedpagenavbox {
 #contentbox {
   background-color: white;
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5px;
+  margin-right: 5px;
   margin-top: 0px;
   margin-bottom: 5px;
-  width: 700px;
+  width: auto;
   border-bottom-left-radius:18px;
   border-bottom-right-radius:18px;
   border-top-left-radius:18px;
@@ -141,9 +141,8 @@ a.selectedpagenavbox {
 }
 
 #textRight {
-float: right;
+
 text-align:justify;
-width: 380px;
 }
 
 #textLeft {
@@ -155,6 +154,8 @@ img.imgbox {
   border-width: 2px;
   border-color: black;
   float: left;
+  clear: right;
+  margin: 20px;
 }
 
 #linkbox {
