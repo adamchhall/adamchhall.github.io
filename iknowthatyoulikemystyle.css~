@@ -48,8 +48,8 @@ h3 {
   border-style: solid;
   border-top-width: 1px;
   border-bottom-width: 0px;
-  border-left-width: 3px;
-  border-right-width: 3px;
+  border-left-width: 2px;
+  border-right-width: 2px;
   background-image: url("tilebg.png");
   margin-left: auto;
   margin-right: auto;
@@ -153,6 +153,16 @@ a.selectedpagenavbox {
   border-color: black;
   padding: 20px 20px 20px 20px;
   overflow: auto;
+}
+
+#resize {
+  align: center;
+}
+
+#resize img {
+  max-width: 100%;
+  height: auto;
+  border: 10000px solid purple;
 }
 
 #textRight {
