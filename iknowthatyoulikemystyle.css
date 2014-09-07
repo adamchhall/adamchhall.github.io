@@ -48,6 +48,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+  min-width: 550px;
 }
 
 #formatbox {
@@ -57,6 +58,7 @@ h3 {
   border-style: solid;
   padding: 0px 0px 0px 0px;
   width: 75%;
+  min-width: 550px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
