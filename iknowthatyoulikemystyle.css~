@@ -55,7 +55,7 @@ h3 {
   margin-right: auto;
   width: 75%;
   height: 75px;
-  min-width: 550px;
+  min-width: 600px;
 }
 
 #formatbox {
@@ -162,7 +162,7 @@ a.selectedpagenavbox {
 #resize img {
   max-width: 100%;
   height: auto;
-  border: 10000px solid purple;
+  width: auto\9; /* ie8 */
 }
 
 #textRight {
