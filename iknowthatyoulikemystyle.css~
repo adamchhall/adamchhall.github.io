@@ -55,7 +55,7 @@ h3 {
   margin-right: auto;
   width: 75%;
   height: 75px;
-  min-width: 600px;
+  /*min-width: 600px;*/
 }
 
 #formatbox {
@@ -86,6 +86,7 @@ h3 {
     background-repeat: repeat-x;
     padding:10px 20px 10px 20px;
     text-align: center;
+    white-space: nowrap;
     height: auto;
     width: auto;
 }
