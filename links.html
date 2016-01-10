@@ -1,56 +1,104 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Adam Hall!</title>
-  <link rel="stylesheet" type="text/css" href="iknowthatyoulikemystyle.css" />
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="theme.css"/>
+	<title>Links</title>
 </head>
-
 <body>
-  <div id="header">
-    <h1>Adam Hall</h1>
-  </div>
-  
-  <div id="formatbox">
-    <div id="navbox">
-      <ul>
-	<li><a href="index.html" class="navbox">About Me</a></li> 
-	<li><a href="research.html" class="navbox">Research</a></li> 
-	<li><a href="teaching.html" class="navbox">Teaching</a></li>
-	<li><a href="links.html" class="selectedpagenavbox">Links</a></li>
-	<li><a href="contact.html" class="navbox">Contact Me</a></li>
-      </ul> 
-    </div>
-    
-    <div id="contentbox">
-      <h2>Links</h2>
-      <p>This page contains links to sites which have been useful to me in the past for one purpose or another. No reason not to share!</p>
-      <h3>References</h3><ul>
-	<li><a href="http://cran.r-project.org/doc/manuals/r-release/R-intro.html">R Intro Manual</a></li>
-	<li><a href="https://docs.python.org/2/reference/">Python 2.7 Reference Manual</a></li>
-	<li><a href="http://mirror.math.ku.edu/tex-archive/info/lshort/english/lshort.pdf">LaTeX Reference Manual</a></li>
-	<li><a href="http://www.stdout.org/~winston/latex/latexsheet.pdf">LaTeX Cheat Sheet</a></li>
-	<li><a href="https://www.atlassian.com/git/tutorial/git-basics">Git Tutorial</a></li>
-	<li><a href="http://sharpstatistics.co.uk/r/ggplot2-guide/">ggplot2 Guide</a></li></ul>
-      <h3>UM Links</h3><ul>
-	<li><a href="http://www.lsa.umich.edu/stats/">University of Michigan - Department of Statistics</a></li>
-	<li><a href="http://open.umich.edu">Open Michigan</a></li>
-	<li><a href="https://ctools.umich.edu/gateway/">CTools</a></li>
-	<li><a href="https://wolverineaccess.umich.edu">Wolverine Access</a></li></ul>
-      <h3>Useful Software</h3><ul>
-	<li><a href="http://www.r-project.org/">R Project</a></li>
-	<li><a href="http://www.scipy.org/index.html">SciPy</a></li>
-	<li><a href="https://www.tug.org/texworks/">TeXworks</a></li>
-	<li><a href="https://www.debian.org/">Debian</a></li></ul>
-      <h3>Humor</h3><ul>
-	<li><a href="http://www.xkcd.com">xkcd</a></li>
-	<li><a href="http://www.smbc-comics.com/">Saturday Morning Breakfast Cereal</a></li>
-	<li><a href="http://www.dilbert.com">Dilbert</a></li>
-	<li><a href="http://www.homestarrunner.com">Homestar Runner</a></li>
-	<li><a href="http://phdcomics.com/comics.php">PhD Comics</a></li></ul>
-      
-    </div>
-  </div>
-</body>
+	<header>
+		<h1>Adam Hall!</h1>
+		<nav>
+		<ul>
+			<li><a href="index.html">About Me</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="links.html" class="current">Links</a></li>
+		</ul>
+	</nav>
+	</header>
 
-</html>
+
+
+	<div class="outerbox">
+		<article>
+			<h2>Links</h2>
+				<div id="umich" class="linkbubble">
+						<h3>University of Michigan</h3><ul>
+						<li><a href="http://www.lsa.umich.edu/stats/">Department of Statistics</a></li>
+						<li><a href="http://open.umich.edu">Open Michigan</a></li>
+						<li><a href="https://ctools.umich.edu/gateway/">CTools</a></li>
+						<li><a href="https://umich.instructure.com/">Canvas</a></li>
+						<li><a href="https://wolverineaccess.umich.edu">Wolverine Access</a></li></ul>
+				</div>
+
+				<div id="references" class="linkbubble">
+						<h3>Technical References</h3><ul>
+						<li><a href="http://cran.r-project.org/doc/manuals/r-release/R-intro.html">R Intro Manual</a></li>
+						<li><a href="https://docs.python.org/2/reference/">Python 2.7 Reference Manual</a></li>
+						<li><a href="http://support.sas.com/training/tutorial/">SAS Tutorial</a></li>
+						<li><a href="http://mirror.math.ku.edu/tex-archive/info/lshort/english/lshort.pdf">LaTeX Reference Manual</a></li>
+						<li><a href="http://www.stdout.org/~winston/latex/latexsheet.pdf">LaTeX Cheat Sheet</a></li>
+						<li><a href="https://www.atlassian.com/git/tutorial/git-basics">Git Tutorial</a></li>
+						<li><a href="http://sharpstatistics.co.uk/r/ggplot2-guide/">ggplot2 Guide</a></li></ul>
+				</div>
+
+				<div id="tools" class="linkbubble">
+			  	<h3>Software Tools</h3><ul>
+					<li><a href="http://www.r-project.org/">R Project</a></li>
+					<li><a href="http://www.rstudio.com/">R Studio</a></li>
+					<li><a href="http://shiny.rstudio.com/">Shiny</a></li>
+					<li><a href="http://www.scipy.org/index.html">SciPy</a></li>
+					<li><a href="https://atom.io/">Atom</a></li>
+					<li><a href="https://www.tug.org/texworks/">TeXworks</a></li>
+					<li><a href="https://git-scm.com/">Git</a></li>
+					<li><a href="http://www.github.com/">Github</a></li>
+					<li><a href="https://www.debian.org/">Debian</a></li></ul>
+				</div>
+
+				<div id="humor" class="linkbubble">
+			  	<h3>Humor</h3><ul>
+					<li><a href="http://www.xkcd.com">xkcd</a></li>
+					<li><a href="http://www.smbc-comics.com/">SMBC</a></li>
+					<li><a href="http://www.dilbert.com">Dilbert</a></li>
+					<li><a href="http://www.homestarrunner.com">Homestar Runner</a></li>
+					<li><a href="http://phdcomics.com/comics.php">PhD Comics</a></li>
+					<li><a href="http://stats.stackexchange.com/questions/423/what-is-your-favorite-data-analysis-cartoon">Data Analysis Cartoons</a></li></ul>
+				</div>
+
+				<div class="clear"></div>
+
+		</article>
+	</div>
+
+	<footer>
+		<table>
+			<tr>
+				<td>
+					<p><strong>Adam Christopher Hall</strong><br/>
+					Email: <a href="mailto:hallac@umich.edu">hallac@umich.edu</a><br/>
+					Resume: <a href="resume.pdf">Download Here</a><br/>
+					<a href="https://www.linkedin.com/profile/view?id=117434301"><img src="linkedin_button.png" style="height:1.5em;" alt="My LinkedIn Profile"/></a><br/>
+					<span class="phoneshow">
+						<br/>University of Michigan<br/>
+						Department of Statistics<br/>
+						436 West Hall<br/>
+						1085 South University Ave<br/>
+						Ann Arbor, MI 48109-1107<br/>
+					</span>
+					</p>
+
+				</td>
+
+				<td style="text-align:right;" class="phonehide">
+					<p>University of Michigan<br/>
+						 Department of Statistics<br/>
+						 436 West Hall<br/>
+						 1085 South University Ave<br/>
+						 Ann Arbor, MI 48109-1107<br/></p>
+						</td>
+			</tr>
+		</table>
+	</footer>
+	</body>
+	</html>

@@ -1,0 +1,279 @@
+
+/* Global styling - doesn't change based on form factor*/
+body {
+	margin: 0px;
+	background-image: url('wallpaper2.jpg');
+	background-attachment: fixed;
+}
+
+header {
+	box-sizing: border-box;
+	background-image: url('headingbg.jpg');
+	text-align: center;
+	width: 95%;
+	min-width: 320px;
+	margin: 0px auto 0px auto;
+	border-left: 0.1rem #000000 solid;
+	border-right: 0.1rem #000000 solid;
+	border-top: 0.1rem #000000 solid;
+
+}
+
+header h1 {
+	color: #FFFFFF;
+	text-shadow: 0.2rem 0.2rem 0.2rem #4A0202;
+}
+
+article {
+	background-color: #FFFFFF;
+	margin: 0rem 0.25rem 0rem 0.25rem;
+	padding: 2vh 5vw 2vh 5vw;
+	border: 0.1rem #000000 solid;
+}
+
+article h2 {
+	text-shadow: 0.2rem 0.2rem 0.2rem #4A0202;
+	text-align: center;
+}
+
+article h3 {
+	position:relative;
+	padding-top:0.5vh;
+	padding-bottom:0.5vh;
+}
+
+footer table {
+	background-color: #552424;
+	padding: 0.5rem;
+	border: 0.25rem black dashed;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+footer {
+	box-sizing: border-box;
+	background-color: #2C2C2C;
+	width: 95%;
+	min-width: 320px;
+	font-size: 0.9rem;
+	margin: 0px auto 0px auto;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	border-left: 0.1rem #000000 solid;
+	border-right: 0.1rem #000000 solid;
+	border-bottom: 0.1rem #000000 solid;
+	padding: 1%;
+}
+
+footer a {
+	color: #9C9393;
+}
+
+.outerbox {
+	box-sizing: border-box;
+	background-color: #2C2C2C;
+	width: 95%;
+	min-width: 320px;
+	margin: 0px auto 0px auto;
+	border-right: 0.1rem #000000 solid;
+	border-left: 0.1rem #000000 solid;
+}
+
+.scaleableimg {
+	display: block;
+	height: auto;
+}
+
+.linkbubble {
+	float:left;
+	margin:1em;
+	padding:0.75em;
+	background-color:#878787;
+	text-align:justify;
+	height:17em;
+	width:17em;
+	border:0.25em solid black;
+	border-radius:3em;
+	white-space:normal;
+}
+
+.linkbubble:hover {
+	background-color:#c28383;
+}
+
+.linkbubble h3 {
+	color:white;
+	text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+.linkbubble a {
+	color:#dbdbdb;
+}
+
+.linkbubble a:visited {
+	color:#614b4b;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Phones and small screens (portrait and landscape) */
+@media screen {
+	.phonehide {
+		display: none;
+	}
+
+	.phoneshow {
+		display:inline;
+	}
+
+	.scaleableimg {
+		max-width:97.5%;
+	}
+
+	/* Phone version of navbar*/
+	nav {
+		box-sizing: border-box;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		background-color: #2C2C2C;
+		margin: 0px auto 0px auto;
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+		text-align: center;
+		width: 100%;
+		white-space: nowrap;
+		border-top-right-radius: 2rem;
+		border-top-left-radius: 2rem;
+		border-top: 0.1rem #000000 solid;
+		border-right: 0.1rem #000000 solid;
+		border-left: 0.1rem #000000 solid;
+	}
+
+	nav ul {
+		list-style: none outside none;
+		margin: 0px 0px 0px 0px;
+	}
+
+	nav a {
+		color: #FFFFFF;
+		font-size: 1.5rem;
+	}
+
+	nav a:visited {
+		width: 20%;
+		color: #F67676;
+	}
+
+ 	a.current {
+ 		display: inline-block;
+		box-sizing: border-box;
+		color: #FF0000;
+		background-color: #550C0C;
+		text-decoration: none;
+		width: 50%;
+		border: 0.1rem dotted white;
+	}
+	/*End of navbar stuff*/
+}
+
+/* Tablets, netbooks, and medium size screens*/
+@media screen and (min-width: 600px) {
+	.leftfloat {
+		float: left;
+		height: auto;
+	}
+
+	.rightfloat {
+		float: right;
+		height: auto;
+	}
+
+	.phonehide {
+		display: initial;
+	}
+
+	.phoneshow {
+		display:none;
+	}
+
+	.scaleableimg {
+		max-width:50%;
+	}
+
+	/* Desktop and tablet version of navbar stuff*/
+	header {
+		height: 7.5rem;
+		min-width: 600px;
+		width: 85%;
+	}
+
+	footer {
+		min-width: 600px;
+		width: 85%;
+	}
+
+	.outerbox {
+		min-width: 600px;
+		width: 85%;
+	}
+
+	nav {
+		box-sizing: border-box;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		background-color: #2C2C2C;
+		margin: 0px auto 0px auto;
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+		text-align: center;
+		width: 100%;
+		white-space: nowrap;
+		border-top-right-radius: 2rem;
+		border-top-left-radius: 2rem;
+		border-top: 0.1rem #000000 solid;
+		border-right: 0.1rem #000000 solid;
+		border-left: 0.1rem #000000 solid;
+	}
+
+	nav ul {
+		list-style: none outside none;
+		margin: 0px 0px 0px 0px;
+	}
+
+	nav li {
+		display: inline-block;
+		padding: 0rem 0.25rem 0rem 0.25rem;
+	}
+
+	nav a {
+		width: 20%;
+		color: #FFFFFF;
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		font-size: 1.25rem;
+	}
+
+	nav a:visited {
+		width: 20%;
+		color: #F67676;
+	}
+
+	a.current {
+		display: initial;
+		box-sizing: border-box;
+		color: #000000 !important;
+		text-decoration: none;
+		text-shadow: 0.2rem 0.2rem 0.2rem #4A0202;
+		background-color: #FFFFFF;
+		padding-top: 1rem;
+		border-top: 0.1rem #000000 solid;
+	}
+	/*End of navbar stuff*/
+}
+
+/*Desktops and larger screens*/
+@media screen and (min-width: 1000px) {
+	.clear {
+		clear: both;
+	}
+
+}

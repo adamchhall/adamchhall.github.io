@@ -1,39 +1,73 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Adam Hall!</title>
-  <link rel="stylesheet" type="text/css" href="iknowthatyoulikemystyle.css" />
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="theme.css"/>
+	<title>Adam Hall's Homepage</title>
 </head>
-
 <body>
-  <div id="header">
-    <h1>Adam Hall</h1>
-  </div>
-  
-  <div id="formatbox">
-    <div id="navbox">
-      <ul>
-	<li><a href="index.html" class="selectedpagenavbox">About Me</a></li> 
-	<li><a href="research.html" class="navbox">Research</a></li> 
-	<li><a href="teaching.html" class="navbox">Teaching</a></li>
-	<li><a href="links.html" class="navbox">Links</a></li>
-	<li><a href="contact.html" class="navbox">Contact Me</a></li>
-      </ul> 
-    </div>
-    
-    <div id="contentbox">
-      <img class="imgbox" src="Suitable.jpg" width="300px">
-      <div id = "textRight">
-      	<h2>About Me</h2>
-      	<p>Hello! My name is Adam, and I am currently a PhD student studying in the Department of Statistics at the University of Michigan, Ann Arbor. I'm interested in figuring out methods for learning about and improving the social and political world we inhabit, and also other stuff that's cool.</p> 
-	<p>In my spare time, I like to read about politics, history, and mythology, watch movies, play around with computers, and go hiking.</p>
-      	<p>I recieved my B.A. in Quantitative Economics and Sociology from the University of California, Irvine in 2011. I am a member of Golden Key and Phi Beta Kappa, and a recipient of the Rackham Merit Fellowship.</p>
-	<p>For more information, check out my <a href="https://www.linkedin.com/profile/view?id=117434301">LinkedIn</a> profile.</p>	
-      </div>
+	<header>
+		<h1>Adam Hall!</h1>
+		<nav>
+		<ul>
+			<li><a href="index.html" class="current">About Me</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="links.html">Links</a></li>
+		</ul>
+	</nav>
+	</header>
 
-    </div>
-  </div>
-</body>
 
-</html>
+
+	<div class="outerbox">
+		<article>
+
+			<img class="scaleableimg leftfloat" style="margin-right:1.5vw; border: 1px solid black; border-radius: 1em 1em 1em 1em;" src="Suitable.jpg" alt="A photo of Adam Hall in a suit, looking dashing."/>
+
+			<div id="aboutme">
+				<h2>About Me</h2>
+				<p>Hello! My name is Adam, and I am currently a PhD student studying in the Department of Statistics at the University of Michigan. My research advisor is <a href="https://sph.umich.edu/faculty-profiles/little-roderick.html">Roderick Little</a>, and my faculty mentor is <a href="http://dept.stat.lsa.umich.edu/~bbh/">Ben Hansen</a>. I'm interested in figuring out methods for learning about and improving the social and political world we inhabit, and anything else that's cool.</p>
+				<p>In my spare time, I like to read about politics, history, and mythology, watch movies, play around with computers, and go hiking.</p>
+				<p>I recieved my B.A. in Quantitative Economics and Sociology from the University of California, Irvine in 2011. I am a member of Golden Key and Phi Beta Kappa, and a recipient of the Rackham Merit Fellowship.</p>
+				<p>For more information, check out my <a href="https://www.linkedin.com/profile/view?id=117434301">LinkedIn profile</a>.</p>
+			</div>
+
+			<div class="clear"></div>
+
+		</article>
+	</div>
+
+
+
+	<footer>
+		<table>
+			<tr>
+				<td>
+					<p><strong>Adam Christopher Hall</strong><br/>
+					Email: <a href="mailto:hallac@umich.edu">hallac@umich.edu</a><br/>
+					Resume: <a href="resume.pdf">Download Here</a><br/>
+					<a href="https://www.linkedin.com/profile/view?id=117434301"><img src="linkedin_button.png" style="height:1.5em;" alt="My LinkedIn Profile"/></a><br/>
+					<span class="phoneshow">
+						<br/>University of Michigan<br/>
+						Department of Statistics<br/>
+						436 West Hall<br/>
+						1085 South University Ave<br/>
+						Ann Arbor, MI 48109-1107<br/>
+					</span>
+					</p>
+
+				</td>
+
+				<td style="text-align:right;" class="phonehide">
+					<p>University of Michigan<br/>
+						 Department of Statistics<br/>
+						 436 West Hall<br/>
+						 1085 South University Ave<br/>
+						 Ann Arbor, MI 48109-1107<br/></p>
+						</td>
+			</tr>
+		</table>
+	</footer>
+	</body>
+	</html>

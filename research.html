@@ -1,42 +1,92 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Adam Hall!</title>
-  <link rel="stylesheet" type="text/css" href="iknowthatyoulikemystyle.css" />
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="theme.css"/>
+	<title>Research</title>
 </head>
-
 <body>
-  <div id="header">
-    <h1>Adam Hall</h1>
-  </div>
-  
-  <div id="formatbox">
-    <div id="navbox">
-      <ul>
-	<li><a href="index.html" class="navbox">About Me</a></li> 
-	<li><a href="research.html" class="selectedpagenavbox">Research</a></li> 
-	<li><a href="teaching.html" class="navbox">Teaching</a></li>
-	<li><a href="links.html" class="navbox">Links</a></li>
-	<li><a href="contact.html" class="navbox">Contact Me</a></li>
-      </ul> 
-    </div>
+	<header>
+		<h1>Adam Hall!</h1>
+		<nav>
+		<ul>
+			<li><a href="index.html">About Me</a></li>
+			<li><a href="research.html" class="current">Research</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="links.html">Links</a></li>
+		</ul>
+	</nav>
+	</header>
 
-    <div id="contentbox">
-      <h2>Research Interests</h2>
-      <div id="resize" align="center"><img src="phdgraph.png"></div>
-	<p>These are some of the topics that interest me:</p>
-	<ul>
-	  <li>Applications of Statistics for the Social Sciences</li>
-	  <li>Networks and Graphical Models</li>
-	  <li>Causal Inference</li>
-	  <li>Statistical Visualization</li>
-	  <li>Machine Learning</li>
-	  <li>Missing Data</li>
-	</ul>
-      
-    </div>
-  </div>
-</body>
 
-</html>
+
+	<div class="outerbox">
+		<article>
+			<h2>Research</h2>
+
+			<img class="scaleableimg leftfloat" style="margin-right: 7vw;" src="research.png" alt="A webcomic about graduate student life."/>
+			<div id="researchinterests" style="margin-top: 7vh;">
+				<h3>Research Interests</h3>
+				<ul>
+						<li>Applications of Statistics for the Social Sciences</li>
+						<li>Machine Learning and Data Mining</li>
+						<li>Spatial statistics</li>
+						<li>Missing Data</li>
+						<li>Causal Inference</li>
+						<li>Statistical Visualization</li>
+				</ul>
+					<div class="clear"></div>
+			</div>
+
+			<div id="currentresearch">
+				<img class="scaleableimg rightfloat" style="margin-left: 2vw;" src="metrorpps.png" alt="An image showing the relative price levels of all US metropolitan areas."/>
+
+				<h3>Current Research</h3>
+				<p>Most people know that the purchasing power of a dollar is not necessarily the same in Mexico or Britain as it is in the United States.
+					The same unit of currency can buy significantly more or less depending on what country it is spent in. The same phenomenon holds, albeit perhaps more subtly, between different
+					regions of the United States. A visitor to Manhattan from Michigan, for example, might face a significant sticker shock if they expect prices to be the same as they were accustomed to back home.
+					However, while social scientists and journalists have internalized the need to adjust nominal dollar values into real terms before making comparisons between different countries or time periods,
+					comparisons within the United States are often still made on the basis of nominal dollar values. This has the potential to distort the outcomes of any study which has to contend with significant
+					regional price variation.</p>
+
+					<p>To facilitate more accurate comparisons in these cases, the Bureau of Economic Analysis (BEA) recently began to publish two sets of annual indices for regional price
+					levels (known as “regional price parities,” or RPPs) within the United States. The first is an estimate of price levels within US states, and the second is an estimate of price levels within
+					major metropolitan areas. However, there are some circumstances in which information at these levels of aggregation may still prove too coarse. The goal of my current project is to
+					develop a method for producing publishable estimates of these RPPs at the county level.</p>
+			</div>
+
+				<div class="clear"></div>
+		</article>
+	</div>
+
+	<footer>
+		<table>
+			<tr>
+				<td>
+					<p><strong>Adam Christopher Hall</strong><br/>
+					Email: <a href="mailto:hallac@umich.edu">hallac@umich.edu</a><br/>
+					Resume: <a href="resume.pdf">Download Here</a><br/>
+					<a href="https://www.linkedin.com/profile/view?id=117434301"><img src="linkedin_button.png" style="height:1.5em;" alt="My LinkedIn Profile"/></a><br/>
+					<span class="phoneshow">
+						<br/>University of Michigan<br/>
+						Department of Statistics<br/>
+						436 West Hall<br/>
+						1085 South University Ave<br/>
+						Ann Arbor, MI 48109-1107<br/>
+					</span>
+					</p>
+
+				</td>
+
+				<td style="text-align:right;" class="phonehide">
+					<p>University of Michigan<br/>
+						 Department of Statistics<br/>
+						 436 West Hall<br/>
+						 1085 South University Ave<br/>
+						 Ann Arbor, MI 48109-1107<br/></p>
+						</td>
+			</tr>
+		</table>
+	</footer>
+	</body>
+	</html>
