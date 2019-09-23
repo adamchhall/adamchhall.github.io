@@ -85,7 +85,7 @@ footer a {
 }
 
 .linkbubble {
-	float:left;
+	float: none;
 	margin:1em;
 	padding:0.75em;
 	background-color:#878787;
@@ -95,6 +95,8 @@ footer a {
 	border:0.25em solid black;
 	border-radius:3em;
 	white-space:normal;
+	display: inline-grid;
+
 }
 
 .linkbubble:hover {
@@ -216,6 +218,14 @@ footer a {
 	.outerbox {
 		min-width: 600px;
 		width: 85%;
+	}
+	
+	/*test*/
+	.centerbox {
+		text-align: center;
+		vertical-align: middle;
+		margin: auto;
+		display: table;
 	}
 
 	nav {

@@ -12,46 +12,72 @@
 		<ul>
 			<li><a href="index.html">About Me</a></li>
 			<li><a href="research.html" class="current">Research</a></li>
-			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="experience.html">Experience</a></li>
 			<li><a href="links.html">Links</a></li>
 		</ul>
 	</nav>
 	</header>
 
 
-
 	<div class="outerbox">
 		<article>
 			<h2>Research</h2>
+			<img class="scaleableimg" style="margin-left:auto; margin-right:auto;" src="research.gif" alt="A webcomic about research."/>
 
-			<img class="scaleableimg leftfloat" style="margin-right: 7vw;" src="research.png" alt="A webcomic about graduate student life."/>
-			<div id="researchinterests" style="margin-top: 7vh;">
+<!--
+			<img class="scaleableimg leftfloat" style="margin-right: 3vw;" src="research.gif" alt="A webcomic about research."/>
+			<div id="researchinterests" style="margin-top: 1vh;">
 				<h3>Research Interests</h3>
 				<ul>
 						<li>Applications of Statistics for the Social Sciences</li>
-						<li>Machine Learning and Data Mining</li>
-						<li>Spatial statistics</li>
-						<li>Missing Data</li>
-						<li>Statistical Visualization</li>
+						<li>Econometrics</li>
+						<li>Machine Learning</li>
+						<li>Survey sampling</li>
+						<li>Dependent data</li>
 				</ul>
-					<div class="clear"></div>
+				<div class="clear"></div>
 			</div>
+-->
+			<div id="dissertationresearch">
 
-			<div id="currentresearch">
-				<img class="scaleableimg rightfloat" style="margin-left: 2vw;" src="metrorpps.png" alt="An image showing the relative price levels of all US metropolitan areas."/>
+				<h3>Dissertation</h3>
 
-				<h3>Current Research</h3>
-				<p>Most people know that the purchasing power of a dollar is not necessarily the same in Mexico or Britain as it is in the United States.
-					The same unit of currency can buy significantly more or less depending on what country it is spent in. The same phenomenon holds, albeit perhaps more subtly, between different
-					regions of the United States. A visitor to Manhattan from Michigan, for example, might face a significant sticker shock if they expect prices to be the same as they were accustomed to back home.
-					However, while social scientists and journalists have internalized the need to adjust nominal dollar values into real terms before making comparisons between different countries or time periods,
-					comparisons within the United States are often still made on the basis of nominal dollar values. This has the potential to distort the outcomes of any study which has to contend with significant
-					regional price variation.</p>
+				<u>Title</u>: Unified Price Indices for Spatial Comparisons<br>
+				<u>Co-Chairs</u>: Roderick Little and Matthew Shapiro<br>
+				<u>Summary</u>: Developed and implemented a method to estimate spatial price indices at low levels of aggregation, such as US counties, using data from retail barcode scanners.<br>
+				<u>Completion Date</u>: September 2019
 
-					<p>To facilitate more accurate comparisons in these cases, the Bureau of Economic Analysis (BEA) recently began to publish two sets of annual indices for regional price
-					levels (known as “regional price parities,” or RPPs) within the United States. The first is an estimate of price levels within US states, and the second is an estimate of price levels within
-					major metropolitan areas. However, there are some circumstances in which information at these levels of aggregation may still prove too coarse. The goal of my current project is to
-					develop a method for producing publishable estimates of these RPPs at the county level.</p>
+				<h4>Overview</h4>
+					<p>Most people know that the value of a unit of currency varies based on the country in which it is spent, or across time.
+					The same phenomenon holds for different regions of the United States.
+					Economists and statistical bureaus have sophisticated techniques for adjusting nominal values into real terms before making comparisons between different countries or time periods, but comparisons within the United States are often still made on the basis of nominal dollar values.
+					This is especially true for research that makes comparisons at low levels of geographic aggregation, such as counties.</p>
+
+					<p>Because the price indices required to adjust nominal figures at such low levels of aggregation are not available, researchers are often forced to ignore regional differences in purchasing power when making these comparisons.
+					For example, studies may use nominal incomes to gauge differences in the purchasing power of consumers between different counties, even in cases where researchers might prefer real incomes for this purpose.
+					These nominal figures do not take into account differences in the prevailing price levels faced by people in the regions being compared, nor do they consider differences in the kinds of products that are available in the areas being compared.
+					As a result, the levels of consumption available to the people being researched may not be accurately represented.</p>
+
+				<h4>Dissertation Abstract</h4>
+
+				<img class="scaleableimg rightfloat" style="margin-left: 2vw;" src="abstract.jpg" alt="An image showing the relative price levels of all US metropolitan areas."/>
+
+					<p>This thesis proposes a method to measure fine-grained spatial differences in purchasing power.
+					This method exploits the recent availability of computer-generated retail scanner data sets to compensate for the absence of sufficiently detailed pricing data in the national accounts.
+					To correct for regional differences in product availability and quality, it extends the theoretical Unified Price Index (UPI) proposed in Redding and Weinstein (2016) from the temporal to the spatial context.
+					In this formulation, differences in product availability in different places are treated as analogous to differences in product availability at different times due to the "birth" and "death" of products across time.</p>
+
+					<p>It provides an example of how to apply this method, by estimating differences in food prices between Michigan counties from information in the Nielsen Retail Scanner Dataset.
+					The estimation of these indices can be divided into three steps.
+					First, spatial UPIs are estimated comparing the cost of living between each pairing of Michigan counties for the 554 different categories of food included in the data.
+					For example, one of these indices might compare the price of bacon in each county, while another might compare prices for fresh fruit, etc.
+					Next, the GEKS method is applied to impose transitivity on each set of comparisons.
+					These product level indices are aggregated into an index reflecting the cost of living for all food using a weighted geometric mean.
+					The weights for each product in this process are the share of total food expenditure that the product accounts for.
+					Finally, superpopulation estimates of the geometric variance of these indices are produced using a cluster bootstrap method.
+					The indices we estimate suggest that the raw prices of food goods are similar between counties in Michigan, with a cross-county standard deviation of about 0.02.
+					When differences in available product varieties are taken into account however, the estimated cost of living in rural areas is consistently higher than the estimated cost of living in more populous counties.</p>
+
 			</div>
 
 				<div class="clear"></div>
@@ -63,27 +89,23 @@
 			<tr>
 				<td>
 					<p><strong>Adam Christopher Hall</strong><br/>
-					Email: <a href="mailto:hallac@umich.edu">hallac@umich.edu</a><br/>
-					Resume: <a href="resume.pdf">Download Here</a><br/>
-					<a href="https://www.linkedin.com/in/adamchhall"><img src="linkedin_button.png" style="height:1.5em;" alt="My LinkedIn Profile"/></a><br/>
+					<a href="mailto:adam.christopher.hall@gmail.com">adam.christopher.hall@gmail.com</a><br/>
+					(805) 223-1525<br/>
 					<span class="phoneshow">
-						<br/>University of Michigan<br/>
-						Department of Statistics<br/>
-						436 West Hall<br/>
-						1085 South University Ave<br/>
-						Ann Arbor, MI 48109-1107<br/>
+						<!--Insert new address here later -->
+						<a href="https://www.linkedin.com/in/adamchhall"><img src="linkedin_button.png" style="height:1.5em;" alt="My LinkedIn Profile"/></a><br/>
+						<a href="resume.pdf">Resume</a><br/>
+						<a href="cv.pdf">CV</a><br/>
 					</span>
 					</p>
 
 				</td>
 
 				<td style="text-align:right;" class="phonehide">
-					<p>University of Michigan<br/>
-						 Department of Statistics<br/>
-						 436 West Hall<br/>
-						 1085 South University Ave<br/>
-						 Ann Arbor, MI 48109-1107<br/></p>
-						</td>
+					<p><a href="https://www.linkedin.com/in/adamchhall"><img src="linkedin_button.png" style="height:1.5em;" alt="My LinkedIn Profile"/></a><br/>
+					<a href="resume.pdf">Resume</a><br/>
+					<a href="cv.pdf">CV</a><br/></p>
+				</td>
 			</tr>
 		</table>
 	</footer>
