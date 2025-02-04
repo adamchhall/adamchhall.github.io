@@ -35,6 +35,10 @@ article p {
 	font-size: 1rem;
 }
 
+article ul li {
+	font-size: 0.1rem;
+}
+
 article h2 {
 	text-shadow: 0.2rem 0.2rem 0.2rem #4A0202;
 	text-align: center;
@@ -192,6 +196,10 @@ h1, h2, p {
 	color: pink;
 }
 
+.aboutmecontainer ul li {
+	font-size: 1.25rem;
+}
+
 .aboutmecontainer h1 {
 	text-align: left;
 	font-size: 2rem;
@@ -218,10 +226,10 @@ h1, h2, p {
 }
 
 .aboutmecontainer p {
-	text-indent: 50px;
+	/*text-indent: 50px;*/
 	margin-left: 1rem;
 	margin-right: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 
 }
 
