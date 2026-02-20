@@ -1,0 +1,45 @@
+/* Light mode background */
+body {
+  background-image: url('/images/bg-light.jpg');
+  /*background-size: cover;*/
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Dark mode background */
+body.colorscheme-dark {
+  background-image: url('/images/bg-dark.jpg');
+  /*background-size: cover;*/
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.content {
+  /*background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+  background-color: rgba(255, 255, 244, 0.75); /* semi-transparent parchment color */
+}
+
+body.colorscheme-dark .content {
+  background-color: rgba(33, 33, 33, 0.95); /* semi-transparent dark */
+}
+
+/* Dark mode - adjust header opacity */
+body.colorscheme-dark .navigation {
+  background-color: rgba(255, 255, 255, 0); /* 0.9 = 90% opacity */
+}
+
+/* Dark mode - adjust footer opacity */
+body.colorscheme-dark .footer {
+  background-color: rgba(245, 245, 245, 0); /* adjust color and opacity as needed */
+}
+
+.avatar img {
+  width: 350px;
+  height: 350px;
+}
+
+.content header h1 {
+  text-align: center;
+}
