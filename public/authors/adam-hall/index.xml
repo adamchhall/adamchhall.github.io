@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adam Hall</title>
+    <link>http://localhost:1313/authors/adam-hall/</link>
+    <description>Recent content on Adam Hall</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/adam-hall/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up my Raspberry Pi NAS</title>
+      <link>http://localhost:1313/posts/raspberrypi-nas/</link>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/raspberrypi-nas/</guid>
+      <description>&lt;h1 id=&#34;a-first-step-towards-digital-freedom&#34;&gt;&#xA;  A First Step towards Digital Freedom&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#a-first-step-towards-digital-freedom&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;lorem ipsum dolor&lt;/p&gt;&#xA;&lt;h2 id=&#34;installing-raspberry-pi-os-which-is-basically-just-debian&#34;&gt;&#xA;  Installing Raspberry Pi OS (which is basically just Debian)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#installing-raspberry-pi-os-which-is-basically-just-debian&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Any version of the Raspberry Pi Imager less than 2.0.0 seems to fail to write settings appropriately to&#xA;the flashed SD card, resulting in endless headaches when trying to connect to a Pi with a headless configuration&#xA;via wifi! Becuase the WiFi password and SSID have not been correctly configured, the device will immidiately and&#xA;silently fail to connect to the Internet if this isn&amp;rsquo;t addressed. Your options are to make sure you are using a&#xA;very recent version of the Pi Imager, to plug the Pi into a monitor and keyboard to configure it even if you plan&#xA;to eventually run it headless, or to find the correct config files to change these settings manually after the&#xA;image is flashed.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

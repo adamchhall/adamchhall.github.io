@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Setting up my Raspberry Pi NAS · Adam Hall
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Adam Hall">
+<meta name="description" content="
+  A First Step towards Digital Freedom
+  
+    
+    Link to heading
+  
+
+lorem ipsum dolor
+
+  Installing Raspberry Pi OS (which is basically just Debian)
+  
+    
+    Link to heading
+  
+
+Any version of the Raspberry Pi Imager less than 2.0.0 seems to fail to write settings appropriately to
+the flashed SD card, resulting in endless headaches when trying to connect to a Pi with a headless configuration
+via wifi! Becuase the WiFi password and SSID have not been correctly configured, the device will immidiately and
+silently fail to connect to the Internet if this isn&rsquo;t addressed. Your options are to make sure you are using a
+very recent version of the Pi Imager, to plug the Pi into a monitor and keyboard to configure it even if you plan
+to eventually run it headless, or to find the correct config files to change these settings manually after the
+image is flashed.">
+<meta name="keywords" content="blog,statistician,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Setting up my Raspberry Pi NAS">
+  <meta name="twitter:description" content="A First Step towards Digital Freedom Link to heading lorem ipsum dolor
+Installing Raspberry Pi OS (which is basically just Debian) Link to heading Any version of the Raspberry Pi Imager less than 2.0.0 seems to fail to write settings appropriately to the flashed SD card, resulting in endless headaches when trying to connect to a Pi with a headless configuration via wifi! Becuase the WiFi password and SSID have not been correctly configured, the device will immidiately and silently fail to connect to the Internet if this isn’t addressed. Your options are to make sure you are using a very recent version of the Pi Imager, to plug the Pi into a monitor and keyboard to configure it even if you plan to eventually run it headless, or to find the correct config files to change these settings manually after the image is flashed.">
+
+<meta property="og:url" content="http://localhost:1313/posts/raspberrypi-nas/">
+  <meta property="og:site_name" content="Adam Hall">
+  <meta property="og:title" content="Setting up my Raspberry Pi NAS">
+  <meta property="og:description" content="A First Step towards Digital Freedom Link to heading lorem ipsum dolor
+Installing Raspberry Pi OS (which is basically just Debian) Link to heading Any version of the Raspberry Pi Imager less than 2.0.0 seems to fail to write settings appropriately to the flashed SD card, resulting in endless headaches when trying to connect to a Pi with a headless configuration via wifi! Becuase the WiFi password and SSID have not been correctly configured, the device will immidiately and silently fail to connect to the Internet if this isn’t addressed. Your options are to make sure you are using a very recent version of the Pi Imager, to plug the Pi into a monitor and keyboard to configure it even if you plan to eventually run it headless, or to find the correct config files to change these settings manually after the image is flashed.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-22T00:00:00+00:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/raspberrypi-nas/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+  
+    
+    <link rel="stylesheet" href="/css/custom.css" media="screen">
+  
+
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Adam Hall
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="mailto:contact@achall.org">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/raspberrypi-nas/">
+              Setting up my Raspberry Pi NAS
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2026-02-22T00:00:00Z">
+                February 22, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/adam-hall/">Adam Hall</a></div>
+
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="a-first-step-towards-digital-freedom">
+  A First Step towards Digital Freedom
+  <a class="heading-link" href="#a-first-step-towards-digital-freedom">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>lorem ipsum dolor</p>
+<h2 id="installing-raspberry-pi-os-which-is-basically-just-debian">
+  Installing Raspberry Pi OS (which is basically just Debian)
+  <a class="heading-link" href="#installing-raspberry-pi-os-which-is-basically-just-debian">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Any version of the Raspberry Pi Imager less than 2.0.0 seems to fail to write settings appropriately to
+the flashed SD card, resulting in endless headaches when trying to connect to a Pi with a headless configuration
+via wifi! Becuase the WiFi password and SSID have not been correctly configured, the device will immidiately and
+silently fail to connect to the Internet if this isn&rsquo;t addressed. Your options are to make sure you are using a
+very recent version of the Pi Imager, to plug the Pi into a monitor and keyboard to configure it even if you plan
+to eventually run it headless, or to find the correct config files to change these settings manually after the
+image is flashed.</p>
+<h2 id="adding-more-storage">
+  Adding More Storage
+  <a class="heading-link" href="#adding-more-storage">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>An SD card isn&rsquo;t enough space for a proper NAS setup, so I&rsquo;m using a 10 TB HDD attached to the Pi through a
+powered USB HDD enclosure. Because this is external media, we need to do a little bit of extra work to get
+it set up and auto-mounted to the filesystem.</p>
+<p>to find uuid: &ldquo;sudo blkid&rdquo;
+make directory /mnt/data/
+in fstab add &ldquo;uuid=whatever /mnt/data btrfs defaults,nofail 0 2&rdquo; at the bottom</p>
+<p>create the directory /mnt/data/shared for the NAS root directory. If you anticipate more users being given
+access to the NAS later, you can create a home directory for each of them, e.g. /mnt/data/shared/adam,
+or /mnt/data/shared/johndoe.</p>
+<h2 id="sharing-with-samba">
+  Sharing with Samba
+  <a class="heading-link" href="#sharing-with-samba">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Once this initial hurdle is out of the way, it is fairly easy to follow the instructions from this
+<a href="https://www.hackster.io/ElecrowOfficial/diy-nas-network-attached-storage-with-raspberry-pi-5-e91a37"  class="external-link" target="_blank" rel="noopener">tutorial</a>
+to get a basic <a href="https://en.wikipedia.org/wiki/Network-attached_storage"  class="external-link" target="_blank" rel="noopener">NAS</a> working.</p>
+<h1 id="ok-now-what">
+  OK, now what?
+  <a class="heading-link" href="#ok-now-what">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>lorem ipsum dolor
+0</p>
+<h2 id="install-syncthing">
+  Install Syncthing
+  <a class="heading-link" href="#install-syncthing">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>install syncthing
+sudo apt install syncthing</p>
+<p>needed to change permissions so that my user was the owner of the nas directory</p>
+<h2 id="backups-with-restic">
+  Backups with Restic
+  <a class="heading-link" href="#backups-with-restic">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>
+<p>Install Restic
+sudo apt install restic</p>
+</li>
+<li>
+<p>Create /etc/restic-env with login credentials for backup service. In my case, this was Backblaze B2:
+export AWS_ACCESS_KEY_ID=ABC123
+export AWS_SECRET_ACCESS_KEY=ABC123
+export RESTIC_REPOSITORY=&ldquo;MyRepo&rdquo;
+export RESTIC_PASSWORD_FILE=/etc/restic-password</p>
+</li>
+<li>
+<p>Create /etc/restic-password with your password in it</p>
+</li>
+<li>
+<p>Create the automatic backup script
+mybackupscript.sh:</p>
+</li>
+</ol>
+<hr>
+<p>#!/bin/bash
+source /etc/restic-env</p>
+<h2 id="generate-backup">
+  Generate backup
+  <a class="heading-link" href="#generate-backup">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>restic -r s3:mybackblazeurl backup /mnt/data/</p>
+<h2 id="handle-retention-policy">
+  Handle retention policy
+  <a class="heading-link" href="#handle-retention-policy">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>restic -r s3:mybackblazeurl forget &ndash;keep-weekly 4 &ndash;keep-monthly 12</p>
+<h2 id="done">
+  Done
+  <a class="heading-link" href="#done">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<hr>
+<p>cron job:
+crontab -e
+0 2 * * 0 /home/adam/restic-backup.sh &raquo; ~/restic-backup.log 2&gt;&amp;1</p>
+<p>lorem ipsum dolor</p>
+<h1 id="nas-on-the-go">
+  NAS On-The-Go
+  <a class="heading-link" href="#nas-on-the-go">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="install-tailscale">
+  Install Tailscale
+  <a class="heading-link" href="#install-tailscale">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>lorem ipsum dolor
+<a href="https://tailscale.com/download/linux/rpi"  class="external-link" target="_blank" rel="noopener">install Tailscale</a></p>
+<p>lorem ipsum dolor
+<a href="https://pimylifeup.com/raspberry-pi-tailscale/"  class="external-link" target="_blank" rel="noopener">tailscale pi setup</a></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2026
+     Adam Hall 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

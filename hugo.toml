@@ -92,7 +92,7 @@ url = "https://www.linkedin.com/in/adamchhall/"
 name = "RSS"
 icon = "fa-solid fa-rss fa-2x"
 weight = 6
-url = "https://achall.org/index.xml"
+url = "https://achall.org/posts/index.xml"
 rel = "alternate"
 type = "application/rss+xml"
 
@@ -115,3 +115,9 @@ url = "projects/"
 name = "Contact me"
 weight = 6
 url = "mailto:contact@achall.org"
+
+[outputs]
+home = ['html']
+section = ['html']
+taxonomy = ['html']
+term = ['html']

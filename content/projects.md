@@ -1,9 +1,8 @@
 +++
 date = '2026-02-20T14:22:52-05:00'
-draft = true
+draft = false
 title = 'Projects'
 +++
-
 
 Below is a list of some of the projects I have contributed to.
 
@@ -19,7 +18,7 @@ aims to improve these models. Examples include:
 * [Small area estimates for Voting Rights Act Section 203(b) coverage determinations](https://journals.sagepub.com/doi/10.1177/00080683231215985)
 * [Inference with Polya-Gamma Augmentation for US Election Law](https://www.mdpi.com/2227-7390/13/6/945)
 * [A Machine Learning Approach for Counting Language Minority Groups in the United States](https://www.census.gov/library/working-papers/2025/adrm/RRS2025-03.html)
-* [A Random Forest Approach for Counting Language Minority Groups in the United States]()
+* [A Random Forest Approach with Amplified Bootstrap for Counting Language Minority Groups in the United States](https://www.mdpi.com/2227-7390/14/5/768)
 
 # The Ranking Project
 It is common to see listicles ranking cities, states, or countries on some criteria or another. 
@@ -40,7 +39,8 @@ proposed a method called the “maximum ratio test” that flags groups of estim
 “too far” from the truth. This method requires very few assumptions, but can be diﬀicult to interpret. 
 This project aims to address this problem by generalizing the maximum ratio test to higher dimensional 
 versions that can be used when a parameter and its estimates are vectors, and by proposing useful heuristics
-that can be used to help interpret the results in practical contexts.
+that can be used to help interpret the results in practical contexts. This project is heavily inspired by 
+the work done in [Wright (2013)](https://www.census.gov/library/working-papers/2013/adrm/rrs2013-05.html).
 * [Interpreting and Extending the Maximum Ratio Test of Unacceptability](https://www.census.gov/library/working-papers/2024/adrm/RRS2024-07.html)
 * [Maximum Norm Ratio Test](https://www.census.gov/library/working-papers/2025/adrm/RRS2025-01.html)
 
@@ -51,8 +51,8 @@ develop appropriate statistical methods based on perturbed or synthetic data rat
 the original data stems from the fact that sometimes the original microdata are sensitive and
 cannot be released due to privacy considerations. What the statistical agencies will release
 instead is a synthetic version of the original data, hiding any confidential or sensitive parts.
-* [Inference about a Binomial Proportion under Privacy Protection](https://www.census.gov/library/working-papers/2026/adrm/RRS2026-01.html)
-* [Inference about a Binomial Proportion under Privacy Protection (IJSS)](https://doi.org/10.3329/ijss.v26il.*****)
+* [Inference about a Binomial Proportion under Privacy Protection (IJSS Publication)](https://doi.org/10.3329/ijss.v26il.*****)
+* [Inference about a Binomial Proportion under Privacy Protection (Technical Report)](https://www.census.gov/library/working-papers/2026/adrm/RRS2026-01.html)
 
 # Price Index Research
 I have contributed to research studying novel price indices and other methods to measure

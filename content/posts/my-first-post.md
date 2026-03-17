@@ -1,7 +1,8 @@
 +++ 
-draft = true
+draft = false
 date = 2026-02-20T14:22:38-05:00
 title = "Launching Yet Another Personal Blog"
+outputs = ['html', 'rss']
 math = false
 description = ""
 slug = ""
