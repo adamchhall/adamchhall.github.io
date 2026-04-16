@@ -51,7 +51,7 @@ develop appropriate statistical methods based on perturbed or synthetic data rat
 the original data stems from the fact that sometimes the original microdata are sensitive and
 cannot be released due to privacy considerations. What the statistical agencies will release
 instead is a synthetic version of the original data, hiding any confidential or sensitive parts.
-* [Inference about a Binomial Proportion under Privacy Protection (IJSS Publication)](https://doi.org/10.3329/ijss.v26il.*****)
+* [Inference about a Binomial Proportion under Privacy Protection (IJSS Publication)](https://doi.org/10.3329/ijss.v26i1.88827)
 * [Inference about a Binomial Proportion under Privacy Protection (Technical Report)](https://www.census.gov/library/working-papers/2026/adrm/RRS2026-01.html)
 
 # Price Index Research
