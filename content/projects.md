@@ -30,6 +30,7 @@ following research visualizations of the uncertainty in the rankings of US state
 from the American Community Survey (or ACS):
 * [Estimated Rankings of All States](https://www.census.gov/csrm/rankings/)
 * [Comparisons of A State with Each Other State](https://www.census.gov/csrm/comparisons/)
+* [Comparing Methods for Constructing Confidence Regions for Rankings](https://www.census.gov/library/working-papers/2026/adrm/RRS2026-03.html)
 
 # Generalizing Tsao \& Wright's Maximum Ratio
 Researchers often have multiple estimates of the same unknown quantity, but don't know
@@ -41,8 +42,9 @@ This project aims to address this problem by generalizing the maximum ratio test
 versions that can be used when a parameter and its estimates are vectors, and by proposing useful heuristics
 that can be used to help interpret the results in practical contexts. This project is heavily inspired by 
 the work done in [Wright (2013)](https://www.census.gov/library/working-papers/2013/adrm/rrs2013-05.html).
-* [Interpreting and Extending the Maximum Ratio Test of Unacceptability](https://www.census.gov/library/working-papers/2024/adrm/RRS2024-07.html)
+* [Interpreting and Extending the Maximum Ratio Test of Unacceptability (Technical Report)](https://www.census.gov/library/working-papers/2024/adrm/RRS2024-07.html)
 * [Maximum Norm Ratio Test](https://www.census.gov/library/working-papers/2025/adrm/RRS2025-01.html)
+* [Interpreting and Extending the Maximum Ratio Test of Unacceptability (The American Statistician)](https://www.tandfonline.com/doi/full/10.1080/00031305.2026.2703630)
 
 # Disclosure Avoidance and Privacy Protection
 Drawing valid statistical inference based on privacy protected data has been the topic of
@@ -51,8 +53,8 @@ develop appropriate statistical methods based on perturbed or synthetic data rat
 the original data stems from the fact that sometimes the original microdata are sensitive and
 cannot be released due to privacy considerations. What the statistical agencies will release
 instead is a synthetic version of the original data, hiding any confidential or sensitive parts.
-* [Inference about a Binomial Proportion under Privacy Protection (IJSS Publication)](https://doi.org/10.3329/ijss.v26i1.88827)
 * [Inference about a Binomial Proportion under Privacy Protection (Technical Report)](https://www.census.gov/library/working-papers/2026/adrm/RRS2026-01.html)
+* [Inference about a Binomial Proportion under Privacy Protection (IJSS)](https://doi.org/10.3329/ijss.v26i1.88827)
 
 # Price Index Research
 I have contributed to research studying novel price indices and other methods to measure
